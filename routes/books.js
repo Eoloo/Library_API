@@ -31,16 +31,27 @@ router.post('/post', async (req, res) => {
     }
 })
 
+//Get by ID Method
+router.get('/getOne/:id', async (req, res) => {
+    try{
+        const data = await model.findById(req.params.id);
+        res.json(data)
+    }
+    catch(error){
+        res.status(500).json({message: error.message})
+    }
+})
+
 //UPDATE
 
-router.patch('/patch', async (req, res) => {
+router.patch('/patch/:id', async (req, res) => {
     const id = req.params.id;
     const updatedData = req.body;
     console.log(id)
     console.log(updatedData)
 
     try {
-        const dataUpdate = await new model.findByIdAndUpdate(id, updatedData, { new: true });
+        const dataUpdate = await model.findByIdAndUpdate(id, updatedData, { new: true });
         res.status(200).json(dataUpdate);
     } catch (error) {
         res.status(400).json({ message: error.message });
@@ -48,6 +59,15 @@ router.patch('/patch', async (req, res) => {
 });
 
 // DELETE
-
+router.delete('/delete/:id', async (req, res) => {
+  try {
+      const id = req.params.id;
+      const data = await model.findByIdAndDelete(id)
+      res.status(200).json(data);
+  }
+  catch (error) {
+      res.status(400).json({ message: error.message })
+  }
+})
 
 module.exports=router;

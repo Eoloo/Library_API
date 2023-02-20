@@ -22,14 +22,14 @@ Using the respective URL's for different CRUD operations, test using postman or 
 ## Support and contact details
 If you run into any issue or have questions, ideas or concerns, kindly reach me through the contacts provided or feel free to make a contribution to the code.
 ## Contact information
-XXXXXXXXXXXXXXXXXXXXXX
+timamwanashifa@gmail.com
 ## List of contributors
-Tima Mwanashifa Ali - XXXXXXXXXXXXXXXXXXXXXXXXX
-Sydney Waithaka Wanjohi -XXXXXXXXXXXXXXXXxXXXXX
-Dorothy Cherotich Gichaba- XXXXXXXXXXXXXXXXXXXX
-Evans Ocholla Oloo -XXXXXXXXXXXXXXXXXXXXXXXXXXX
+Tima Mwanashifa Ali - Create github repository, project folders, database , POST operations and deploy project.
+Sydney Waithaka Wanjohi - Create GET operations and deploy project
+Dorothy Cherotich Gichaba- Create DELETE operations and deploy project
+Evans Ocholla Oloo -Create UPDATE operations and deploy project
 ## Link to live site 
-XXXXXXXXXXX
+https://library-api-or0x.onrender.com
 ## Licence Information
 Distributed under the MIT License. See License.txt for more information.
 

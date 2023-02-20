@@ -2,7 +2,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
-console.log(process.env)
+//console.log(process.env)
 mongoose.set('strictQuery', true);
 
 const libraryRoutes = require('./routes/books');
